@@ -1,20 +1,20 @@
 import About from "./components/AnimatedAbout";
 import AnimatedLandpage from "./components/AnimatedLandpage";
 import NavBar from "./components/AnimatedNavbar";
-
+import AnimatedFeatures from "./components/Technology";
+import Technologies from "./components/Tools";
+import WhatWeAre from "./components/WhatWeAre";
 export default function Home() {
-  // useEffect(() => {
-  //   (async () => {
-  //     const LocomotiveScroll = await import("locomotive-scroll").default;
-  //     const locomotiveScroll = new LocomotiveScroll();
-  //   })();
-  // }, []);
   return (
     <div className="overflow-x-hidden">
       <NavBar />
       <AnimatedLandpage />
       <About />
-      <div className="h-dvh bg-black"></div>
+      <div className="bg-black">
+        <AnimatedFeatures />
+        <Technologies />
+      </div>
+      <WhatWeAre />
       {/* <About /> */}
       {/* <Services /> */}
       {/* <Banner /> */}
