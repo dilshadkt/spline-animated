@@ -1,32 +1,31 @@
-import About from "./components/About";
-import Banner from "./components/Banner";
-import Blogs from "./components/Blogs";
-import ClientLogo from "./components/ClientLogo";
-import Contact from "./components/Contact";
-import Features from "./components/Features";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Industries from "./components/Industries";
-import Services from "./components/Services";
-import Stat from "./components/Stat";
-import Testimonial from "./components/Testimonial";
-import Whatsapp from "./components/Whatsapp";
+import About from "./components/AnimatedAbout";
+import AnimatedLandpage from "./components/AnimatedLandpage";
+import NavBar from "./components/AnimatedNavbar";
 
 export default function Home() {
+  // useEffect(() => {
+  //   (async () => {
+  //     const LocomotiveScroll = await import("locomotive-scroll").default;
+  //     const locomotiveScroll = new LocomotiveScroll();
+  //   })();
+  // }, []);
   return (
     <div className="overflow-x-hidden">
-      <Hero />
+      <NavBar />
+      <AnimatedLandpage />
       <About />
-      <Services />
-      <Banner />
-      <Industries />
-      <Features />
+      <div className="h-dvh bg-black"></div>
+      {/* <About /> */}
+      {/* <Services /> */}
+      {/* <Banner /> */}
+      {/* <Industries /> */}
+      {/* <Features /> */}
       {/* <Stat /> */}
-      <ClientLogo />
-      <Blogs />
-      <Testimonial />
-      <Contact />
-      <Whatsapp />
+      {/* <ClientLogo /> */}
+      {/* <Blogs /> */}
+      {/* <Testimonial /> */}
+      {/* <Contact /> */}
+      {/* <Whatsapp /> */}
     </div>
   );
 }
